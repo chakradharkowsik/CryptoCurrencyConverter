@@ -19,12 +19,14 @@
                 <div class="form-group m-2">
                   <input type="number" class="form-control" id="amount" />
                 </div>
-                <button class="btn calculate-btn btn-primary m-2" id="btn_Convert">
+                <button
+                  class="btn calculate-btn btn-primary m-2"
+                  id="btn_Convert"
+                >
                   Convert
                 </button>
               </form>
             </div>
-            <div class="card-footer"></div>
           </div>
         </div>
         <div class="col-md-4">
@@ -35,21 +37,18 @@
             <div class="card-body">
               your portfolio information should come here
             </div>
-            <div class="card-footer"></div>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="card-deck">
-          <div class="card bg-light shadow p-2 mb-2  rounded-lg">
+        <div class="card-deck col-md-12" id="cur_CardDeck">
+          <div
+            style="min-width: 18rem;"
+            class="card col-md-2 bg-light shadow p-2 mb-2  rounded-lg"
+            id="cur_card"
+          >
             <div class="card-body text-center">
               <p class="card-text">BTC</p>
-              <p class="card-text">12335.65</p>
-            </div>
-          </div>
-          <div class="card bg-light shadow p-2 mb-2  rounded-lg">
-            <div class="card-body text-center">
-              <p class="card-text">LNM</p>
               <p class="card-text">12335.65</p>
             </div>
           </div>
@@ -72,5 +71,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="home.js" type="text/javascript"></script>
   </body>
 </html>

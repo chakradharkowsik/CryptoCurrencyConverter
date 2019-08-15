@@ -1,4 +1,4 @@
-var crrncy = { EUR: { PLN: 4.15, USD: 0.83 }, USD: { PLN: 3.45, EUR: 1.2 } };
+/*var crrncy = { EUR: { PLN: 4.15, USD: 0.83 }, USD: { PLN: 3.45, EUR: 1.2 } };
 var btn = document.querySelector(".calculate-btn");
 var baseCurrencyInput = document.getElementById("currency-1");
 var secondCurrencyInput = document.getElementById("currency-2");
@@ -31,10 +31,16 @@ function convertCurrency(event) {
   toShowResult.textContent = result;
 }
 
-btn.addEventListener("click", convertCurrency);
+btn.addEventListener("click", convertCurrency);*/
 //github.com/angular/angular-cli/wiki
 https: $(document).ready(function() {
-  $("#btn_Convert").click(function() {
-    $("#car_parent").append($("#car2").clone());
+  $("#btn_Convert").click(function(event) {
+    event.preventDefault();
+    let newCard = $("#cur_card").clone();
+    if (newCard == undefined || newCard == null) return;
+
+    newCard.find("p:first").text("abc");
+    newCard.find("p:last").text("345");
+    $("#cur_CardDeck").append(newCard);
   });
 });
