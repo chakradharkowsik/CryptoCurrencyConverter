@@ -36,11 +36,17 @@ btn.addEventListener("click", convertCurrency);*/
 https: $(document).ready(function() {
   $("#btn_Convert").click(function(event) {
     event.preventDefault();
+
+    amount = $("#amount");
+    currency = $("#currency");
+
+    var cur = currency ? currency.val() : "BTC";
+    var amt = amount ? amount.val() : 0;
     let newCard = $("#cur_card").clone();
     if (newCard == undefined || newCard == null) return;
 
-    newCard.find("p:first").text("abc");
-    newCard.find("p:last").text("345");
-    $("#cur_CardDeck").append(newCard);
+    newCard.find("p:first").text(cur);
+    newCard.find("p:last").text(amt);
+    $("#cur_CardDeck").prepend(newCard);
   });
 });
