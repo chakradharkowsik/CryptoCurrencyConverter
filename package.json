@@ -23,6 +23,6 @@
   "homepage": "https://github.com/chakradharkowsik/CryptoCurrencyConverter#readme",
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   }
 }
